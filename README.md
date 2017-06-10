@@ -1,4 +1,4 @@
-# debian-git
-A minimal docker container with debian and git.
+# git container in Ubuntu
+A minimal docker container with Ubuntu and git and vim.
 
-[![docker](http://dockeri.co/image/samueldebruyn/debian-git "docker")](https://registry.hub.docker.com/u/samueldebruyn/debian-git/)
+[![docker](http://dockeri.co/image/samsulmaarif/git "docker")](https://registry.hub.docker.com/u/samsulmaarif/git/)

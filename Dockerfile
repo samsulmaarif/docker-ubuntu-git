@@ -1,17 +1,17 @@
-FROM debian:stable-slim
-MAINTAINER Samuel Debruyn <s@muel.be>
+FROM ubuntu:xenial
+MAINTAINER Samsul Ma'arif <samsul@puskomedia.id>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-# setup workdir
+# direktori kerja
 RUN mkdir -p /root/work/
 WORKDIR /root/work/
 
 # install git
-RUN apt-get -y update && apt-get -y install git
+RUN apt-get -y update && apt-get -y install git vim-nox
 
-# slim down image
+# kecilkan ukuran image
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/man/?? /usr/share/man/??_*
 
-# run a CMD to show git is installed
+# jalankan CMD untuk menunjukkan git telah terinstall
 CMD git help
